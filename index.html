@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Hữu Dũng - Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-container">
+            <div class="loading-logo">Hoàng Hữu Dũng</div>
+            <div class="loading-percentage" id="loadingPercentage">0%</div>
+            <div class="loading-text">Đang tải...</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+        <div class="balloon-container" id="balloonContainer"></div>
+    </div>
+
+    <div id="mainContent">
+        <div class="snow-container" id="snowContainer"></div>
+
+        <nav class="nav-blur">
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#gallery">Thư viện</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>Hoàng Hữu Dũng</h1>
+                <a href="#about" class="btn-gradient">Khám phá thêm</a>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Giới thiệu</h2>
+                <div class="about-content animate-on-scroll">
+                    <div class="photo-container">
+                        <div class="photo">
+                            <img src="public/images/avt.jpg" alt="Profile Photo">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Xin chào! Tôi là Hoàng Hữu Dũng và đây là trang web của tui</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Kỹ năng</h2>
+                <div class="skills-grid">
+                    <div class="skill-card animate-on-scroll">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Tạo ra các giao diện với HTML.</p>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Tạo ra các giao diện web responsive và hiện đại  CSS.</p>
+                    </div>
+                    <div class="skill-card animate-on-scroll">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>Phát triển ứng dụng web tương tác với JavaScript và các framework hiện đại.</p>
+                    </div>
+                        <div class="skill-card animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3>Java</h3>
+                            <p>Phát triển ứng dụng web và phần mềm doanh nghiệp với Java, Spring Boot và các công nghệ liên quan.</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>MySQL</h3>
+                            <p>Thiết kế và quản lý cơ sở dữ liệu quan hệ hiệu quả cho các hệ thống quy mô lớn.</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-php"></i>
+                            </div>
+                            <h3>PHP</h3>
+                            <p>Xây dựng trang web với ngôn ngữ hiện đại PHP</p>
+                        </div>
+                        <div class="skill-card animate-on-scroll">
+                            <div class="skill-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Kotlin</h3>
+                            <p>Phát triển ứng dụng Android hiện đại với Kotlin và Android Studio.</p>
+                        </div>
+                    <div class="skill-card animate-on-scroll">
+                        <div class="skill-icon">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <h3>Laravel</h3>
+                        <p>Xây dựng hệ thống web mạnh mẽ và RESTful APIs với Laravel và hệ sinh thái PHP.</p>
+                    </div>
+
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Dự án</h2>
+                <div class="project-grid">
+                <div class="project-card animate-on-scroll">
+                    <a href="#" class="project-image">
+                        <i class="fas fa-hotel"></i>
+                    </a>
+                    <div class="project-info">
+                        <h3>Hệ thống Đặt Khách Sạn</h3>
+                        <p>Ứng dụng hỗ trợ người dùng tìm kiếm, đặt phòng và quản lý đặt chỗ.</p>
+                        <p><strong>Công nghệ:</strong> Java, Spring Boot, MySQL, Thymeleaf</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <a href="#" class="project-image">
+                        <i class="fas fa-store"></i>
+                    </a>
+                    <div class="project-info">
+                        <h3>Website Bán Hàng Trực Tuyến</h3>
+                        <p>Trang web thương mại điện tử đơn giản với chức năng hiển thị sản phẩm, giỏ hàng và quản lý đơn hàng.</p>
+                        <p><strong>Công nghệ:</strong> Laravel, HTML, CSS, JavaScript</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll">
+                    <a href="#" class="project-image">
+                        <i class="fas fa-landmark"></i>
+                    </a>
+                    <div class="project-info">
+                        <h3>Website Bảo Tàng Mỹ Thuật</h3>
+                        <p>Trang web giới thiệu hiện vật, triển lãm và thông tin về bảo tàng với giao diện thân thiện người dùng.</p>
+                        <p><strong>Công nghệ:</strong> React.js, Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Thư viện</h2>
+                <div class="gallery-grid">
+                    <div class="card animate-on-scroll">
+                        <img src="public/images/hinh1.jpg" alt="Gallery Image 1">
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <img src="public/images/hinh2.jpg" alt="Gallery Image 2">
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <img src="public/images/hinh3.jpg" alt="Gallery Image 3">
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <img src="public/images/hinh4.jpg" alt="Gallery Image 4">
+                    </div>
+                    <div class="card animate-on-scroll">
+                        <img src="public/images/hinh5.jpg" alt="Gallery Image 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Liên hệ</h2>
+                <form class="contact-form animate-on-scroll">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Họ và tên</label>
+                            <input type="text" id="name" name="name" placeholder="Nhập họ và tên của bạn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="subject">Chủ đề</label>
+                            <input type="text" id="subject" name="subject" placeholder="Chủ đề tin nhắn">
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Tin nhắn</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Nội dung tin nhắn của bạn" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-gradient">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>Hoàng Hữu Dũng</h3>
+                        <p>Nhà phát triển web đam mê tạo ra những trải nghiệm số tuyệt vời.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên kết nhanh</h3>
+                        <ul>
+                            <li><a href="#home">Trang chủ</a></li>
+                            <li><a href="#about">Giới thiệu</a></li>
+                            <li><a href="#skills">Kỹ năng</a></li>
+                            <li><a href="#projects">Dự án</a></li>
+                            <li><a href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Liên hệ</h3>
+                        <p>Email: dunghoang1122004@gmail.com</p>
+                        <p>Phone: (+84) 3922234485</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Copyright. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="public/js/script.js"></script>
+</body>
+</html>
